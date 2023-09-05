@@ -1,0 +1,34 @@
+body {
+    font-family: cursive;
+    background-color: cornsilk;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+h1 {
+    background-color: rgb(226, 200, 208);
+    color: #333;
+}
+label{
+    background-color: rgb(92, 205, 197);
+}
+input[type="number"] {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100px;
+}
+button {
+    padding: 5px 15px;
+    margin-top: 20px;
+    background-color: #063761;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#result {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
