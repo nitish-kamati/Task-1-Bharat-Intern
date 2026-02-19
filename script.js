@@ -1,5 +1,22 @@
-function convertTemperature() {
-    const celsius = parseFloat(document.getElementById("celsius").value);
+document.getElementById("convertBtn").addEventListener("click", function() {
+
+    const celsiusInput = document.getElementById("celsius");
+    const resultDiv = document.getElementById("result");
+
+    const celsius = parseFloat(celsiusInput.value);
+
+    if (isNaN(celsius)) {
+        resultDiv.textContent = "Please enter a valid number!";
+        resultDiv.classList.add("show-result");
+        return;
+    }
+
     const fahrenheit = (celsius * 9/5) + 32;
-    document.getElementById("result").textContent = `Result: ${fahrenheit.toFixed(2)}°F`;
-}
+
+    resultDiv.textContent = celsius + "°C = " + fahrenheit.toFixed(2) + "°F";
+
+    resultDiv.classList.remove("show-result");
+    void resultDiv.offsetWidth;  
+    resultDiv.classList.add("show-result");
+
+});
